@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 3 | Problem 4</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        background-color: #7b3f97;
+      }
+      .image {
+        height: 400px;
+        width: 300px;
+      }
+      .image_container {
+        width: 300px;
+        margin: auto;
+
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .image_container h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .image_container p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .text {
+        padding: 10px;
+      }
+      .text button {
+        padding: 6px 12px;
+        background-color: #e0f70d;
+        border-radius: 10px;
+        border: none;
+        border: 1px solid transparent;
+      }
+      .text button:hover {
+        background-color: #c9d089;
+        cursor: pointer;
+        border: 1px solid transparent;
+      }
+      .text button:active {
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      .container {
+        padding-top: 108px;
+        height: calc(100vh - 108px);
+        background: red;
+        background-image: url("./sun.png"), url("./star.png");
+        background-repeat: no-repeat;
+        background-position: right top, bottom left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image_container">
+        <img class="image" src="./card_image.png" alt="man running" />
+
+        <div class="text">
+          <h1>Tension Mat Lo Sab Hoga</h1>
+          <p>
+            Bus Practice Karo kam hojayega. sure me hard hoga but bad me asan ho
+            jayega
+          </p>
+          <button>Earn Reward</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
