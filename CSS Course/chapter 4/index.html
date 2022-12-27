@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 4</title>
+
+    <style>
+      /* For Display */
+
+      /* .box {
+        display: inline-grid;
+        background-color: red;
+        padding: 10px;
+        margin-bottom: 5px;
+        gap: 10px;
+      }
+      .element {
+        display: inline-block;
+        padding: 20px 30px;
+        background: #000;
+
+        width: 100px;
+        color: white;
+      } */
+      /* For Flex */
+
+      .box {
+        display: flex;
+        row-gap: 50px;
+        column-gap: 10px;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        background-color: rgb(144, 252, 144);
+      }
+      button {
+        height: 50px;
+        width: 100px;
+      }
+      #box2 {
+        order: 1;
+        height: 80px;
+      }
+      #box1 {
+        order: 3;
+        height: 150px;
+      }
+      #box3 {
+        order: 2;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+      <div class="element">First</div>
+      <div class="element">Second</div>
+      <div class="element">Third</div>
+    </div>
+    <div class="box">
+      <div class="element">First</div>
+      <div class="element">Second</div>
+      <div class="element">Third</div>
+    </div> -->
+
+    <!-- For Flex -->
+
+    <div class="box">
+      <button id="box1">element 1</button>
+      <button id="box2">element 2</button>
+      <button id="box3">element 3</button>
+      <button id="box1">element 1</button>
+      <button id="box2">element 2</button>
+      <button id="box3">element 3</button>
+      <button id="box1">element 1</button>
+      <button id="box2">element 2</button>
+      <button id="box3">element 3</button>
+      <button id="box1">element 1</button>
+      <button id="box2">element 2</button>
+      <button id="box3">element 3</button>
+      <button id="box1">element 1</button>
+      <button id="box2">element 2</button>
+      <button id="box3">element 3</button>
+    </div>
+  </body>
+</html>
