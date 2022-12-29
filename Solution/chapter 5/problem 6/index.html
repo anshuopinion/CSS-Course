@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 5 | Problem 6</title>
+    <style>
+      .grid_container {
+        max-width: 1200px;
+        height: 900px;
+        margin: auto;
+        margin-top: 80px;
+        display: grid;
+
+        gap: 20px;
+        border: 1px solid black;
+        grid-template-areas:
+          " item1 item1 item2 item3"
+          " item1 item1 item2 item7"
+          " item4 item5 item6 item7";
+      }
+
+      #item1 {
+        grid-area: item1;
+      }
+      #item2 {
+        grid-area: item2;
+      }
+      #item3 {
+        grid-area: item3;
+      }
+      #item4 {
+        grid-area: item4;
+      }
+      #item5 {
+        grid-area: item5;
+      }
+      #item6 {
+        grid-area: item6;
+      }
+      #item7 {
+        grid-area: item7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid_container">
+      <img id="item1" src="./images/image1.png" alt="image1" />
+      <img id="item2" src="./images/image2.png" alt="image2" />
+      <img id="item3" src="./images/image3.png" alt="image3" />
+      <img id="item4" src="./images/image4.png" alt="image4" />
+      <img id="item5" src="./images/image5.png" alt="image5" />
+      <img id="item6" src="./images/image6.png" alt="image6" />
+      <img id="item7" src="./images/image7.png" alt="image7" />
+    </div>
+  </body>
+</html>
