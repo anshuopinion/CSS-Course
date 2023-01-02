@@ -23,16 +23,41 @@
         width: 100%;
         position: absolute;
         bottom: 0;
+        overflow-x: hidden;
       }
       .building {
+        position: absolute;
         background-image: url(./building.svg);
-        background-repeat: no-repeat;
         height: 100%;
+        width: 200%;
+        animation: moving 10s -3s linear infinite;
+      }
+      .building:nth-of-type(2) {
+        opacity: 0.5;
+        animation: moving 15s reverse linear infinite;
+      }
+      .building:nth-of-type(3) {
+        opacity: 0.5;
+        animation: moving 20s -1s linear infinite;
+      }
+
+      @keyframes moving {
+        0% {
+          translate: 0;
+        }
+        50% {
+          translate: -25%;
+        }
+        100% {
+          translate: -50%;
+        }
       }
     </style>
   </head>
   <body>
     <div class="town">
+      <div class="building"></div>
+      <div class="building"></div>
       <div class="building"></div>
     </div>
   </body>
